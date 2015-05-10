@@ -39,3 +39,16 @@ rect:first-child {
 .banner-valign-content{
 	padding-bottom: 50px;
 }
+.a-form-item-title{
+  color: #1ab394;  
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.m-r-1px{
+  margin-right: 2px;
+}
+.m-t{
+  margin-top: 20px;
+}
