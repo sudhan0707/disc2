@@ -1,0 +1,93 @@
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>{{main.report.title}}</h2>
+    </div>
+</div>
+
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content banner-itop-b-p forum-item active">
+                    <div class="row">
+                        <div class="col-lg-6 b-r ">
+                            <div class="wrapper banner-valign-content">
+                                <div class="forum-icon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                <a href="forum_post.html" class="forum-item-title">Current Month</a>
+                                <div class="forum-sub-title">January 2015 </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <form id="contentForm" class="form-horizontal ">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Period Month</label>
+                                    <div class="col-md-8">
+                                         <select chosen id="pMonth" class="form-control"  tabindex="1" ng-model="periodMonth" ng-options="pMonth for pMonth in main.periodMonth">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Metro</label>
+                                    <div class="col-md-8">
+                                        <select chosen id="states" class="form-control"  tabindex="2" ng-model="metro" ng-options="s for s in main.states">
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- <div class="col-lg-4">
+            <div class="input-group">
+                <label class="control-label">Current Month </label>
+                <span class=""> {{main.report.currentMonth[0]}} </span>
+            </div>
+        </div>
+        <div class="col-lg-4 col-lg-offset-4">
+            <div class="input-group row">
+                    <span class='input-group-addon span4'>Period Month</span>
+                    <input type="text" class="form-control" value="03/04/2014">
+                </div>
+                <div class="input-group row">
+                    <span class='input-group-addon span4' style="padding-right:62px;">Metro</span>
+                    <input type="text" class="form-control" value="03/04/2014">
+                </div>
+        </div>
+    </div> -->
+    
+        <div class="row">
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Line Chart Example <small>with custom colors.</small> </h5>
+                    <div class="ibox-tools"></div>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <d3-pyramid height="630"></d3-pyramid>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Line Chart Example <small>with custom colors.</small> </h5>
+                    <div class="ibox-tools"></div>
+                </div>
+                <div class="ibox-content">
+                    <div>
+                        <d3-bi-partitie height="630" data="main.partitieData" label="name" ></d3-bi-partitie>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
