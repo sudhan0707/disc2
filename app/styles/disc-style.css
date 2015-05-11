@@ -47,7 +47,7 @@ rect:first-child {
 }
 
 .m-r-1px{
-  margin-right: 2px;
+  border-right: 2px solid white;
 }
 .m-t{
   margin-top: 20px;
